@@ -1,0 +1,663 @@
+   /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  *{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  
+}
+html{
+  font-size: 16px;
+}
+
+  
+
+@import "responsive";
+@media  (max-width:1300px) {
+
+}
+@media  (max-width:1171px) {
+
+}
+
+@media screen and (max-width:768px) {
+  html{font-size: 12px;}
+}
+@media screen and (max-width:480px) {
+  html{font-size: 10px;}
+}
+@keyframes coin{
+  0%{
+    transform: rotateY(180deg);
+  }
+  20%{
+    transform: none;
+  }
+}
+
+body{
+  background-color:white;
+    background-image: url(https://static.tildacdn.com/tild3466-3539-4264-a333-363165393439/Vector_5.svg);
+    font-family: 'Segoe UI', sans-serif;
+    background-repeat: no-repeat;
+    background-position: -53% 0%;
+    background-size: 67rem 35rem;
+min-width: 320px;
+}
+/* MAIN */
+
+.navbar{
+  width: 100%;
+  height: 4,375rem;
+}
+.nav__container{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+ 
+  
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar__brand{
+  max-width: 100%;
+  height:auto;
+margin-left: 4.8rem;
+margin-top: 0.5rem;
+}
+.navbar__wrap{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.navbar__menu{
+  position: relative;
+margin-top: 1.75rem;
+margin-right: 5.625rem;
+display:flex;
+flex-flow: row nowrap;
+justify-content:center;
+list-style-type: none;
+}
+.navbar__menu-element{
+ margin-right: 2;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.navbar__menu ~ li,a {
+  color:#000;
+  
+}
+.navbar__menu a:visited{
+  text-decoration: none;
+}
+
+  .navbar__menu li a {
+  padding: 10px;
+  text-decoration: none;
+  }
+.navbar__right{
+  margin-top: 30px;
+  margin-right:60px;
+display: flex;
+flex-flow: column nowrap;
+
+}
+.callback{
+  margin-left: 1.875rem;
+  color: black;
+  font-size:0.8rem;
+
+}
+.callback_number{
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.navbar__right  :hover{
+  color:#FF8C00;
+  transition: 1s;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.navbar__menu a:hover{
+  color:#FF8C00;
+  transition: 0.5  s;
+;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.navbar__menu a:after{
+  margin-top: 7px;
+ margin-left: 4px;
+background-color: #FF8C00;
+display: block;
+content: "";
+height: .125rem;
+width: 0%;
+-webkit-transition: .5s ease-in-out;
+-moz--transition:  .5s ease-in-out;
+transition:  .5s ease-in-out;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.navbar__menu a:hover:after,
+.navbar__menu a a:focus:after {
+    width: 100%;
+}
+.main__title{
+
+font-size: 5rem;
+text-transform: uppercase;
+line-height:0.8;
+margin-left: 75px;
+}
+.main__left{
+display: flex;
+flex-flow: row wrap;
+justify-content:left;
+}
+.main__subtitle{
+
+margin-left: 75px;
+font-size: 1.2rem;
+}
+.button__pos{
+margin-top: 1.875rem;
+margin-left: 4.0625rem;
+max-width:17.5rem;
+max-height:3.75rem;
+
+}
+.button{
+border: 3px solid black;
+border-radius: 40px;
+text-decoration: none;
+display: block;
+text-transform: uppercase;
+width: 17.5rem;
+height: 3.75rem;
+background: black;
+position: relative;
+color:white;
+text-decoration: none;
+text-align: center;
+padding-top: 15px;
+max-width: 100%;
+
+}
+.circles{
+  margin-top: 160px;
+
+}
+.cirles__wrapper{
+  margin: 0 auto;
+}
+.circles__wrappper-content{
+  display: flex;
+  flex-flow:  row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+margin-left: 80px;
+
+
+}
+.circles__content-item{
+max-width: 25rem;
+width: 20%;  
+}
+.icon-circle{
+  
+  max-width: 100%;
+  background-color:#BFE142 ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.375rem;
+  color: #fff;
+  height: 7.5rem;
+  width: 7.5rem;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.circles__content-item:nth-child(1) .icon-circle{
+animation: coin 7.5s linear 6s infinite;}
+
+.circles__content-item:nth-child(2) .icon-circle{
+animation: coin 7.5s linear 7.5s infinite;}
+
+.circles__content-item:nth-child(3) .icon-circle{
+animation: coin 7.5s linear 9s infinite;}
+
+.circles__content-item:nth-child(4) .icon-circle{
+animation: coin 7.5s linear 10.5s infinite;}
+
+.circles__content-item:nth-child(5) .icon-circle{
+animation: coin 7.5s linear 12s infinite;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.circles__images,.icon-dinner-1{
+  top:6.25rem;
+}
+
+
+.circles__content-subtitle{
+  width: 9rem;
+  font-size: .9375rem;
+  word-wrap: break-word;
+}
+.bz-content {
+  box-sizing: content-box;
+}
+.bz-content *,
+.bz-content *::before,
+.bz-content *::after {
+  box-sizing: inherit;
+}
+
+.bz-border {
+  box-sizing: border-box;
+  margin-top:5rem;
+}
+.bz-border *,
+.bz-border *::before,
+.bz-border *::after {
+  box-sizing: inherit;
+}
+
+/* до сюда */
+.box {
+  border: 5px solid orange;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 10px;
+  margin: 10px;
+  background-color: yellow;
+}
+.programm{
+  margin-top: 200px;
+}
+.header{
+  text-align: center;
+  
+  margin: 0 auto;
+}
+
+.header__title{
+  padding-bottom:15px ;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+.header__text{
+  font-size: 0.8rem;
+  margin-top:30px ;
+  margin-bottom: 40px;
+}
+
+
+
+
+.programms__items{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+margin: 0 auto;
+margin-left: 5rem;
+
+}
+.programms__item{
+  width: 29.5%;
+
+  margin-bottom: 30px;
+  margin-right: 36px;
+}
+.programms__img{
+  max-width: 100%;
+  height: auto;
+}
+
+.programms__item-header{
+  padding: 25px;
+
+}
+.programms__item-content{
+  margin: 0 auto;
+  
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+ .programms__item-content:hover{
+  
+  box-shadow: 0 0.875rem 1.75rem  rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+} 
+
+.programms_food{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  list-style: none;
+  margin-bottom: 29.5px;
+  margin-right: 131px;
+}
+.programms__item-text{
+  padding-left: 15px;
+}
+.programms__food-ul{
+  display: flex;
+  flex-flow: row wrap;
+  margin-left:17px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+.programms__food-li{
+  width: 50%;
+}
+.programms__ul-li{
+  margin-left: 17px;
+}
+
+.btn__pos{
+ 
+margin:45px;
+}
+.btn{
+  border: 3px solid red;
+  border-radius: 58px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  width: 15.5rem;
+  height: 3.875rem;
+  background: white;
+  position: relative;
+  color:red;
+  text-align: center;
+  padding-top: 18px;
+  max-width: 100%;
+  
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.btn__pos :hover{
+  
+  color:white;
+  background: red;
+}
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+.btn :hover{
+  text-decoration: none;
+  color:white;
+  background: red;
+}
+.wrapper{
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  min-width: 300px+20px;
+  min-height: 100%;
+  overflow: hidden;
+margin: 0 auto;
+}
+
+.images__header{
+  text-align: center;
+  max-height:  62.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+hr{
+  margin: 0 auto;
+  width:4.6875rem;
+  border: none;
+  height: .0625rem;
+  background: black;
+}
+
+.images__header-logo{
+ max-width: 100%;
+  height: 6.25rem;
+ 
+}
+.images__header-tags {
+  word-spacing:0.3em;
+  font-family: 'SegoeUI',Arial,sans-serif;
+  font-size: .875rem;
+ margin-top: 30px;
+ margin-bottom: 50px;
+ 
+}
+
+.images__header-tags a{
+  text-decoration: none;
+  color:#95c11f;
+}
+
+
+
+
+.images__сontent{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 1  0px;
+  
+}
+
+.image{
+  
+  width: 22%;
+  margin: 0px 5px;
+}
+.item{
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  padding: 3px;
+}
+.contact{
+  background-color: #282828;
+  width: 100%;
+  }
+  .contact__wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 45px;
+  padding-bottom: 64px;
+  }
+  .contact__right {
+  width: 45%;
+  }
+  .contact__left {
+  width: 45%;
+  margin-right: 60px;
+  }
+  .contact__header {
+  margin: 0 auto;
+  padding-top: 74px;
+  padding-bottom: 55px;
+  }
+  .contact__logo {
+  display: block;
+  margin: 22px auto;
+  }
+  .contact__title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.1875rem;
+  line-height: 100%;
+  color: #BFE142;
+  max-width: 26.69rem;
+  margin: 0 auto;
+  }
+  .contact__input-text{
+  border: 0;
+  background-color: #282828;
+  border-bottom: 1px inset #F0F0F0;
+  color: #fff;
+  padding-bottom: 26px;
+  margin-bottom: 60px;
+  width: 100%;
+  font-size: 1rem;
+  outline: 0;
+  }
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-text:focus{
+  outline: 0;
+  border-color: #fff;
+  }
+
+
+  .contact__input-select{
+  background: #282828;
+  border: 0;
+  outline: 0;
+  margin-bottom: 60px;
+  border-bottom: 1px inset #F0F0F0;
+  color: #fff;
+  padding-bottom: 26px;
+  width: 100%;
+  font-size: 1rem;
+  }
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-select:focus{
+  outline: 0;
+  border-color: #fff;
+  }
+  .contact__radio-box{
+  display: flex;
+  margin-bottom: 60px;
+  }
+  .contact__input-radio{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  }
+  .contact__label-radio{
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-right: 63px;
+  
+  }
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-radio+.contact__label-radio{
+  display: inline-flex;
+  align-items: center;
+  }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-radio+.contact__label-radio::before{
+  content: '';
+  display: inline-flex;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  margin-right: 19px;
+  border: 1.5px solid #FFFFFF;
+  }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-radio:checked+.contact__label-radio::before{
+  border-color: #FFFFFF;
+  background-color: #282828;
+  background: url(https://i.postimg.cc/1zP5tB9J/check.png) no-repeat;
+  background-size: 0.6rem;
+  background-position: 40% 45%;
+  }
+  .contact__checkbox{
+  margin-bottom: 60px;
+  }
+  .contact__input-checkbox{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  }
+  .contact__label-checkbox{
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  }
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-checkbox+.contact__label-checkbox{
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  }
+ /*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-checkbox+.contact__label-checkbox::before{
+  content: '';
+  display: inline-flex;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 19px;
+  border: 1px solid #FFFFFF;
+  }
+/*CSS - уровень 2 (сложные селекторы) - Задание 1*/
+  .contact__input-checkbox:checked+.contact__label-checkbox::before{
+  border-color: #FFFFFF;
+  background-color: #282828;
+  background: url(https://i.postimg.cc/PJ8kKvXC/radio-active.png) 50% no-repeat;
+  }
+  .contact__btn{
+  background-color: #282828;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 2px solid #fff;
+  border-radius: 58px;
+  padding: 20px 62px;
+  max-width: 13.75rem;
+  }
+  .contact__input-comment{
+  height: 9.1875rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px inset #F0F0F0;
+  background-color: #282828;
+  resize: none;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  }
+
+
+/* footer*/
+.footer__bottom{
+  background-color: black;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+  height: 14rem;
+
+  
+}
+.footer__bottom p{
+  color:white;
+}
+.footer__left{
+  margin-left: 2rem;
+}
+.footer__logo{
+ 
+  margin-top: 3rem;
+  padding-bottom: 6rem;
+
+}
+.footer__left-info{
+  padding-bottom: 2rem;
+}
+.footer__middle{
+
+  margin-top:3rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.footer__middle-info{
+  padding-bottom: 1rem;
+}
+.footer__right{
+  margin-right: 2rem;
+}
+.footer__right-images{
+  margin-top: 3rem;
+  padding-bottom: 6rem;
+  word-spacing: 0.7rem;
+}
